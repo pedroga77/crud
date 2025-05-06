@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script src="./js/main.js" defer type="module"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Crud FrontEnd</title>
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" alt="">
+        <input type="text" id="nome-contato" placeholder="Digite novo contato">
+        <button id="novo-contato" class="button show">Criar Contato</button>
+    </header>
+    <main class="card-show">
+        <div class="container" id='container'>
+            
+        </div>
+        <form>
+            <div class="preview">
+                <input type="file" accept="image/*" class="preview-input" id="foto">
+                    <label class="preview-label" for="foto"></label>
+                    <img src="" class="image-preview" alt="" id="image-preview">
+            </div>
+            <div class="input-container">
+                <div class="input">
+                    <label>Nome</label>
+                    <input type="text" class="input-text" id="nome" required>
+                </div>
+                <div class="input">
+                    <label>E-mail</label>
+                    <input type="text" class="input-text" id="email" required>
+                </div>
+                <div class="input">
+                    <label>Celular</label>
+                    <input type="text" class="input-text" id="celular" required>
+                </div>
+                <div class="input">
+                    <label>Endereço</label>
+                    <input type="email" class="input-text" id="endereco" required>
+                </div>
+                <div class="input">
+                    <label>Cidade</label>
+                    <input type="text" class="input-text" id="cidade" required>
+                </div>
+            </div>
+            <div class="button-container">
+                <button type="button" class="button azul" id="editar">Editar</button>
+                <button type="button" class="button" id="deletar">Deletar</button>
+                <button type="button" class="button verde show" id="salvar">Salvar</button>
+                <button type="button" class="button cinza show" id="cancelar">Cancelar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
